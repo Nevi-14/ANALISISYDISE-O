@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/public/css/index.css">
+    <title>REPORTES</title>
+ 
+</head>
+<body>
+
+
+    <div id="wrapper" class="menuDisplayed">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark top-fixed">
+            <div class="container-fluid">
+              <img src="./public/logo.png"  height="60" alt="">
+            
+       
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li>
+                    <a class="btn" id="display">   <span class="navbar-toggler-icon"></span></a>
+                </li>
+              </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+              <li class="nav-item">
+                <a class="nav-link active btn btn-danger btn-sm rounded-pill" href="/login.html">Cerrar Sessión</a>
+              </li>
+    
+            </ul>
+            </div>
+          </nav>
+
+          <!--  SIDE BAR  -->
+
+   
+          <div id="sidebar" class="bg-dark">
+
+            <ul class="list-unstyled">
+              <li><a href="/inicio.html" >Inicio</a></li>
+              <li><a href="/solicitudes.html" >Solicitudes</a></li>
+
+            <li><a href="/usuarios.html" >Usuarios</a></li>
+            <li><a href="/docentes.html">Docentes</a></li>
+            <li><a href="/Equipos.html" >Equipos</a></li>
+            <li><a href="/reportes.html" class="li-active">Reportes</a></li>
+
+          </ul>
+          </div>
+
+          <div id="content" class="container-fluid py-4">
+            <div class="row m-4">
+            <div class="col-12">
+            
+                <div class="row">
+                    <div class="col-12">
+                        <h5>REPORTES</h5>
+                        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ Nuevo Reporte
+  </button>
+                    </div>
+                    <div class="col-12">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nombre Equipo</th>
+                                <th scope="col">Fecha Reporte</th>
+                                <th scope="col">Opciones</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">2</th>
+                       
+                                <td>Teclado</td>
+                                <td>19-11-2021</td>
+                                <td><div class="d-grid gap-2 d-md-block">
+                                  <button class="btn btn-primary" type="button">EDITAR</button>
+                                  <button class="btn btn-danger" type="button">ELIMINAR</button>
+                                </div></td>
+                              </tr>
+
+                              <tr>
+                                <th scope="row">2</th>
+                        
+                                <td>Monitor</td>
+                                <td>19-11-2021</td>
+                                <td><div class="d-grid gap-2 d-md-block">
+                                  <button class="btn btn-primary" type="button">EDITAR</button>
+                                  <button class="btn btn-danger" type="button">ELIMINAR</button>
+                                </div></td>
+                              </tr>
+
+                              <tr>
+                                <th scope="row">2</th>
+                   
+                                <td>Raton</td>
+                                <td>19-11-2021</td>
+                                <td><div class="d-grid gap-2 d-md-block">
+                                  <button class="btn btn-primary" type="button">EDITAR</button>
+                                  <button class="btn btn-danger" type="button">ELIMINAR</button>
+                                </div></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+        
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nuevo Reporte</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nombre Equipo</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" 
+              >
+              
+            </div>
+            
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Fecha Inicio</label>
+              <input type="date" class="form-control" id="exampleInputEmail1" 
+              >
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Fecha Fecha Fin</label>
+              <input type="date" class="form-control" id="exampleInputEmail1" 
+              >
+              
+            </div>
+
+            
+      
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+          </div>
+
+    </div>
+    
+<script src="/public/js/index.js"></script>
+</body>
+</html>
