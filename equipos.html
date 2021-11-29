@@ -44,6 +44,8 @@
             <ul class="list-unstyled">
               <li><a href="/inicio.html" >Inicio</a></li>
               <li><a href="/solicitudes.html" >Solicitudes</a></li>
+              <li><a href="/roles.html" >Roles</a></li>
+              <li><a href="/estado.html">Estados</a></li>
 
             <li><a href="/usuarios.html" >Usuarios</a></li>
             <li><a href="/docentes.html">Docentes</a></li>
@@ -82,7 +84,9 @@
                                 <td>Teclado</td>
                                 <td>19-11-2021</td>
                                 <td><div class="d-grid gap-2 d-md-block">
-                                  <button class="btn btn-primary" type="button">EDITAR</button>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editar">
+                                    EDITAR
+                                         </button>
                                   <button class="btn btn-danger" type="button">ELIMINAR</button>
                                 </div></td>
                               </tr>
@@ -130,26 +134,72 @@
         </div>
         <div class="modal-body">
           <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Nombre Equipo</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" 
-              >
-              
-            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Numero de Serie</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" 
+                  >
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nombre Equipo</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" 
+                  >
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Modelo</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" 
+                  >
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Marca</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" 
+                  >
+                  
+                </div>
             
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Unidades</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-   
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Fecha Registro</label>
-              <input type="date" class="form-control" id="exampleInputEmail1" 
-              >
-              
-            </div>
+              </div>
 
-            
+              <div class="col-6">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Unidades Totales</label>
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+     
+              </div>
+  
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Unidades Disponiles</label>
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+     
+              </div>
+  
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Estado</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                
+              </div>
+              <div clas>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Fecha Registro</label>
+                <input type="date" class="form-control" id="exampleInputEmail1" 
+                >
+                
+              </div>
+  
+              </div>
+              </div>
+            </div>
+          
       
 
           </form>
@@ -161,9 +211,102 @@
       </div>
     </div>
   </div>
+
+
+  
           </div>
 
     </div>
+
+      
+  <!-- Modal -->
+  <div class="modal fade" id="editar" tabindex="-1" aria-labelledby="editar" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editar">Editar Equipo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Numero de Serie</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" 
+                  >
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nombre Equipo</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" 
+                  >
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Modelo</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" 
+                  >
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Marca</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" 
+                  >
+                  
+                </div>
+            
+              </div>
+
+              <div class="col-6">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Unidades Totales</label>
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+     
+              </div>
+  
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Unidades Disponiles</label>
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+     
+              </div>
+  
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Estado</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                
+              </div>
+              <div clas>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Fecha Registro</label>
+                <input type="date" class="form-control" id="exampleInputEmail1" 
+                >
+                
+              </div>
+  
+              </div>
+              </div>
+            </div>
+          
+      
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     
     <script src="./public/js/index.js"></script>
 </body>

@@ -45,13 +45,12 @@
             <ul class="list-unstyled">
               <li><a href="/inicio.html" >Inicio</a></li>
               <li><a href="/solicitudes.html" >Solicitudes</a></li>
-
+              <li><a href="/roles.html" >Roles</a></li>
+              <li><a href="/estado.html"  class="li-active">Estados</a></li>
             <li><a href="/usuarios.html" >Usuarios</a></li>
-            <li><a href="/roles.html" >Roles</a></li>
-            <li><a href="/estado.html"  >Estados</a></li>
             <li><a href="/docentes.html">Docentes</a></li>
             <li><a href="/Equipos.html" >Equipos</a></li>
-            <li><a href="/reportes.html" class="li-active">Reportes</a></li>
+            <li><a href="/reportes.html">Reportes</a></li>
 
           </ul>
           </div>
@@ -126,12 +125,7 @@
         </div>
 
         
- 
-          </div>
-
-    </div>
-    
-           
+        
 
   
   <!-- Modal -->
@@ -139,36 +133,23 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Nuevo Reporte</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Nuevo Estado</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <form>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Equipo</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
+              <label for="exampleInputEmail1" class="form-label">Nombre Estado</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" 
+              >
               
             </div>
             
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Fecha Inicio</label>
-              <input type="date" class="form-control" id="exampleInputEmail1" 
-              >
+              <label for="exampleInputEmail1" class="form-label">Descripcion</label>
+              <textarea class="form-control"  name="" id="" cols="10" rows="4"></textarea>
               
             </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Fecha Fecha Fin</label>
-              <input type="date" class="form-control" id="exampleInputEmail1" 
-              >
-              
-            </div>
-
             
       
 
@@ -182,46 +163,30 @@
     </div>
   </div>
 
-
-
-         
-
-  
+      
   <!-- Modal -->
   <div class="modal fade" id="editar" tabindex="-1" aria-labelledby="editar" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="editar">Editar Reporte</h5>
+          <h5 class="modal-title">Editar Estado</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <form>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Equipo</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
+              <label for="exampleInputEmail1" class="form-label">Nombre Estado</label>
+              <input type="text" class="form-control" id="editar" 
+              >
               
             </div>
             
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Fecha Inicio</label>
-              <input type="date" class="form-control" id="exampleInputEmail1" 
-              >
+              <label for="exampleInputEmail1" class="form-label">Descripcion</label>
+              <textarea class="form-control"  name="" id="" cols="10" rows="4"></textarea>
               
             </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Fecha Fecha Fin</label>
-              <input type="date" class="form-control" id="exampleInputEmail1" 
-              >
-              
-            </div>
-
+  
             
       
 
@@ -234,6 +199,10 @@
       </div>
     </div>
   </div>
+          </div>
+
+    </div>
+    
     <script src="./public/js/index.js"></script>
 </body>
 </html>

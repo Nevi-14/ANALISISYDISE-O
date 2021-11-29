@@ -43,7 +43,8 @@
             <ul class="list-unstyled">
                 <li><a href="/inicio.html" >Inicio</a></li>
               <li><a href="/solicitudes.html" >Solicitudes</a></li>
-
+              <li><a href="/roles.html" >Roles</a></li>
+              <li><a href="/estado.html">Estados</a></li>
             <li><a href="/usuarios.html" >Usuarios</a></li>
             <li><a href="/docentes.html" class="li-active">Docentes</a></li>
             <li><a href="/Equipos.html" >Equipos</a></li>
@@ -82,7 +83,9 @@
                                 <td>123456</td>
                                 <td>nelson@gmail.com</td>
                                 <td><div class="d-grid gap-2 d-md-block">
-                                  <button class="btn btn-primary" type="button">EDITAR</button>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editar">
+                                    EDITAR
+                                         </button>
                                   <button class="btn btn-danger" type="button">ELIMINAR</button>
                                 </div></td>
                               </tr>
@@ -92,7 +95,9 @@
                                 <td>123456</td>
                                 <td>nelson@gmail.com</td>
                                 <td><div class="d-grid gap-2 d-md-block">
-                                  <button class="btn btn-primary" type="button">EDITAR</button>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editar">
+                                    EDITAR
+                                         </button>
                                   <button class="btn btn-danger" type="button">ELIMINAR</button>
                                 </div></td>
                               </tr>
@@ -102,7 +107,9 @@
                                 <td>123456</td>
                                 <td>nelson@gmail.com</td>
                                 <td><div class="d-grid gap-2 d-md-block">
-                                  <button class="btn btn-primary" type="button">EDITAR</button>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editar">
+                                    EDITAR
+                                         </button>
                                   <button class="btn btn-danger" type="button">ELIMINAR</button>
                                 </div></td>
                               </tr>
@@ -119,6 +126,60 @@
 
   
   <!-- Modal -->
+  <div class="modal fade" id="editar" tabindex="-1" aria-labelledby="editar" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editar">EDITAR DOCENTE</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" 
+              >
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Codigo Docente</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" 
+              >
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+   
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Telefono</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" 
+              >
+              
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Fecha Registro</label>
+              <input type="date" class="form-control" id="exampleInputEmail1" 
+              >
+              
+            </div>
+
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   
+  <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -134,7 +195,12 @@
               >
               
             </div>
-            
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Codigo Docente</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" 
+              >
+              
+            </div>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Correo</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -147,7 +213,13 @@
               
             </div>
 
-  
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Fecha Registro</label>
+              <input type="date" class="form-control" id="exampleInputEmail1" 
+              >
+              
+            </div>
+
 
           </form>
         </div>

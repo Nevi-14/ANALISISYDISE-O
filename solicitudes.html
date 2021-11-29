@@ -45,7 +45,8 @@
             <ul class="list-unstyled">
               <li><a href="/inicio.html" >Inicio</a></li>
                 <li><a href="/solicitudes.html" class="li-active">Solicitudes</a></li>
-
+                <li><a href="/roles.html"  >Roles</a></li>
+                <li><a href="/estado.html" >Estados</a></li>
               <li><a href="/usuarios.html">Usuarios</a></li>
               <li><a href="/docentes.html">Docentes</a></li>
               <li><a href="/Equipos.html" >Equipos</a></li>
@@ -85,7 +86,9 @@
                                 <td>Audifonos</td>
                                 <td>19-11-2021</td>
                                 <td><div class="d-grid gap-2 d-md-block">
-                                  <button class="btn btn-primary" type="button">EDITAR</button>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EDITAR">
+                                EDITAR
+                                     </button>
                                   <button class="btn btn-danger" type="button">ELIMINAR</button>
                                 </div></td>
                               </tr>
@@ -95,7 +98,9 @@
                                 <td>Monitor</td>
                                 <td>19-11-2021</td>
                                 <td><div class="d-grid gap-2 d-md-block">
-                                  <button class="btn btn-primary" type="button">EDITAR</button>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EDITAR">
+                                    EDITAR
+                                         </button>
                                   <button class="btn btn-danger" type="button">ELIMINAR</button>
                                 </div></td>
                               </tr>
@@ -105,7 +110,9 @@
                                 <td>Raton</td>
                                 <td>19-11-2021</td> 
                                 <td><div class="d-grid gap-2 d-md-block">
-                                  <button class="btn btn-primary" type="button">EDITAR</button>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EDITAR">
+                                    EDITAR
+                                         </button>
                                   <button class="btn btn-danger" type="button">ELIMINAR</button>
                                 </div></td>
                               </tr>
@@ -123,7 +130,7 @@
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog  modal-dialog-centered  modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Nueva Solicitud</h5>
@@ -136,20 +143,41 @@
                <div class="col-6">
 
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Nombre Equipo</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" 
-                  >
+                  <label for="exampleInputEmail1" class="form-label">Equipo</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
                   
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Docente</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" 
-                  >
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
                   
                 </div>
 
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Fecha Inicio</label>
+                  <label for="exampleInputEmail1" class="form-label">Estado</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Fecha Solicitud</label>
                   <input type="date" class="form-control" id="exampleInputEmail1" 
                   >
                   
@@ -157,7 +185,7 @@
 
     
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Fecha Fecha Fin</label>
+                  <label for="exampleInputEmail1" class="form-label">Fecha Devolucion</label>
                   <input type="date" class="form-control" id="exampleInputEmail1" 
                   >
                   
@@ -168,8 +196,8 @@
          
     
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Notas</label>
-                  <textarea class="form-control"  name="" id="" cols="30" rows="12"></textarea>
+                  <label for="exampleInputEmail1" class="form-label">Detalle</label>
+                  <textarea class="form-control"  name="" id="" cols="10" rows="15"></textarea>
                   
                 </div>
     
@@ -187,6 +215,97 @@
       </div>
     </div>
   </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="EDITAR" tabindex="-1" aria-labelledby="EDITAR" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-centered  modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="EDITAR">EDITAR Solicitud</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+             <div class="container">
+               <div class="row">
+                 <div class="col-6">
+  
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Equipo</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                    
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Docente</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                    
+                  </div>
+  
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Estado</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                    
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Fecha Solicitud</label>
+                    <input type="date" class="form-control" id="exampleInputEmail1" 
+                    >
+                    
+                  </div>
+  
+      
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Fecha Devolucion</label>
+                    <input type="date" class="form-control" id="exampleInputEmail1" 
+                    >
+                    
+                  </div>
+                 </div>
+                 <div class="col-6">
+              
+           
+      
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Detalle</label>
+                    <textarea class="form-control"  name="" id="" cols="10" rows="15"></textarea>
+                    
+                  </div>
+      
+  
+  
+                 </div>
+               </div>
+             </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
           </div>
 
     </div>
