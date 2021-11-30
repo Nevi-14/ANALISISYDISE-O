@@ -45,8 +45,7 @@
             <ul class="list-unstyled">
               <li><a href="/inicio.html" >Inicio</a></li>
                 <li><a href="/solicitudes.html" class="li-active">Solicitudes</a></li>
-                <li><a href="/roles.html"  >Roles</a></li>
-                <li><a href="/estado.html" >Estados</a></li>
+        
               <li><a href="/usuarios.html">Usuarios</a></li>
               <li><a href="/docentes.html">Docentes</a></li>
               <li><a href="/Equipos.html" >Equipos</a></li>
@@ -63,7 +62,7 @@
                     <div class="col-12">
                         <h5>Solicitudes</h5>
                         <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-success modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
  Nueva Solicitud
   </button>
                     </div>
@@ -86,7 +85,7 @@
                                 <td>Audifonos</td>
                                 <td>19-11-2021</td>
                                 <td><div class="d-grid gap-2 d-md-block">
-                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EDITAR">
+                                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#EDITAR">
                                 EDITAR
                                      </button>
                                   <button class="btn btn-danger" type="button">ELIMINAR</button>
@@ -98,7 +97,7 @@
                                 <td>Monitor</td>
                                 <td>19-11-2021</td>
                                 <td><div class="d-grid gap-2 d-md-block">
-                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EDITAR">
+                                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#EDITAR">
                                     EDITAR
                                          </button>
                                   <button class="btn btn-danger" type="button">ELIMINAR</button>
@@ -110,7 +109,7 @@
                                 <td>Raton</td>
                                 <td>19-11-2021</td> 
                                 <td><div class="d-grid gap-2 d-md-block">
-                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EDITAR">
+                                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#EDITAR">
                                     EDITAR
                                          </button>
                                   <button class="btn btn-danger" type="button">ELIMINAR</button>
@@ -165,17 +164,7 @@
                   
                 </div>
 
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Estado</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                  
-                </div>
+
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Fecha Solicitud</label>
                   <input type="date" class="form-control" id="exampleInputEmail1" 
@@ -184,20 +173,27 @@
                 </div>
 
     
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Fecha Devolucion</label>
-                  <input type="date" class="form-control" id="exampleInputEmail1" 
-                  >
-                  
-                </div>
                </div>
                <div class="col-6">
-            
-         
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Estado
+                </label>
+                <div class="mb-3">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    En progeso
+                  </label>
+                </div>
+                <div class="mb-3">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Finalizado
+                  </label>
+                </div>
     
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Detalle</label>
-                  <textarea class="form-control"  name="" id="" cols="10" rows="15"></textarea>
+                  <textarea class="form-control"  name="" id="" cols="10" rows="4"></textarea>
                   
                 </div>
     
@@ -210,7 +206,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar</button>
+          <button type="button" class="btn btn-success">Guardar</button>
         </div>
       </div>
     </div>
@@ -226,79 +222,76 @@
           </div>
           <div class="modal-body">
             <form>
-             <div class="container">
-               <div class="row">
-                 <div class="col-6">
-  
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Equipo</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                    
+              <div class="container">
+                <div class="row">
+                  <div class="col-6">
+   
+                   <div class="mb-3">
+                     <label for="exampleInputEmail1" class="form-label">Equipo</label>
+                     <select class="form-control" id="exampleFormControlSelect1">
+                       <option>1</option>
+                       <option>2</option>
+                       <option>3</option>
+                       <option>4</option>
+                       <option>5</option>
+                     </select>
+                     
+                   </div>
+                   <div class="mb-3">
+                     <label for="exampleInputEmail1" class="form-label">Docente</label>
+                     <select class="form-control" id="exampleFormControlSelect1">
+                       <option>1</option>
+                       <option>2</option>
+                       <option>3</option>
+                       <option>4</option>
+                       <option>5</option>
+                     </select>
+                     
+                   </div>
+   
+   
+                   <div class="mb-3">
+                     <label for="exampleInputEmail1" class="form-label">Fecha Solicitud</label>
+                     <input type="date" class="form-control" id="exampleInputEmail1" 
+                     >
+                     
+                   </div>
+   
+       
                   </div>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Docente</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                    
+                  <div class="col-6">
+                   <label class="form-check-label" for="flexRadioDefault1">
+                     Estado
+                   </label>
+                   <div class="mb-3">
+                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                     <label class="form-check-label" for="flexRadioDefault1">
+                       En progeso
+                     </label>
+                   </div>
+                   <div class="mb-3">
+                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                     <label class="form-check-label" for="flexRadioDefault2">
+                       Finalizado
+                     </label>
+                   </div>
+       
+                   <div class="mb-3">
+                     <label for="exampleInputEmail1" class="form-label">Detalle</label>
+                     <textarea class="form-control"  name="" id="" cols="10" rows="4"></textarea>
+                     
+                   </div>
+       
+   
+   
                   </div>
-  
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Estado</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                    
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Fecha Solicitud</label>
-                    <input type="date" class="form-control" id="exampleInputEmail1" 
-                    >
-                    
-                  </div>
-  
-      
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Fecha Devolucion</label>
-                    <input type="date" class="form-control" id="exampleInputEmail1" 
-                    >
-                    
-                  </div>
-                 </div>
-                 <div class="col-6">
-              
-           
-      
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Detalle</label>
-                    <textarea class="form-control"  name="" id="" cols="10" rows="15"></textarea>
-                    
-                  </div>
-      
-  
-  
-                 </div>
-               </div>
-             </div>
-            </form>
+                </div>
+              </div>
+             </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Guardar</button>
+            <button type="button" class="btn btn-success">Guardar</button>
           </div>
         </div>
       </div>
